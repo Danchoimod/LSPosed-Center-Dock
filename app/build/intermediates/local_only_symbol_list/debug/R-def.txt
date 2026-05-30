@@ -1,0 +1,5 @@
+R_DEF: Internal format may change without notice
+local
+drawable tw_tb_ic_allapps_mtrl_mirror
+drawable tw_tb_ic_finder_mtrl
+drawable tw_tb_ic_recent_mtrl_mirror

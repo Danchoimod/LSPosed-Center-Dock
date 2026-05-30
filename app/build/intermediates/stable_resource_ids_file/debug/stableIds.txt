@@ -1,0 +1,3 @@
+com.example.dextaskbarcenter:drawable/tw_tb_ic_finder_mtrl = 0x7f010001
+com.example.dextaskbarcenter:drawable/tw_tb_ic_recent_mtrl_mirror = 0x7f010002
+com.example.dextaskbarcenter:drawable/tw_tb_ic_allapps_mtrl_mirror = 0x7f010000

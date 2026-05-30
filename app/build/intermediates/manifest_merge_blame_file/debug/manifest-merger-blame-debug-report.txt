@@ -1,0 +1,41 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.dextaskbarcenter"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <application
+11-->C:\Users\Phu Pham\Desktop\dex\xposed-module\app\src\main\AndroidManifest.xml:4:5-19:19
+12        android:allowBackup="true"
+12-->C:\Users\Phu Pham\Desktop\dex\xposed-module\app\src\main\AndroidManifest.xml:5:9-35
+13        android:debuggable="true"
+14        android:extractNativeLibs="false"
+15        android:label="DeX Taskbar Center" >
+15-->C:\Users\Phu Pham\Desktop\dex\xposed-module\app\src\main\AndroidManifest.xml:6:9-43
+16
+17        <!-- Xposed Module Metadata -->
+18        <meta-data
+18-->C:\Users\Phu Pham\Desktop\dex\xposed-module\app\src\main\AndroidManifest.xml:9:9-11:36
+19            android:name="xposedmodule"
+19-->C:\Users\Phu Pham\Desktop\dex\xposed-module\app\src\main\AndroidManifest.xml:10:13-40
+20            android:value="true" />
+20-->C:\Users\Phu Pham\Desktop\dex\xposed-module\app\src\main\AndroidManifest.xml:11:13-33
+21        <meta-data
+21-->C:\Users\Phu Pham\Desktop\dex\xposed-module\app\src\main\AndroidManifest.xml:12:9-14:87
+22            android:name="xposeddescription"
+22-->C:\Users\Phu Pham\Desktop\dex\xposed-module\app\src\main\AndroidManifest.xml:13:13-45
+23            android:value="Centers the Samsung DeX taskbar items programmatically." />
+23-->C:\Users\Phu Pham\Desktop\dex\xposed-module\app\src\main\AndroidManifest.xml:14:13-84
+24        <meta-data
+24-->C:\Users\Phu Pham\Desktop\dex\xposed-module\app\src\main\AndroidManifest.xml:15:9-17:34
+25            android:name="xposedminversion"
+25-->C:\Users\Phu Pham\Desktop\dex\xposed-module\app\src\main\AndroidManifest.xml:16:13-44
+26            android:value="82" />
+26-->C:\Users\Phu Pham\Desktop\dex\xposed-module\app\src\main\AndroidManifest.xml:17:13-31
+27    </application>
+28
+29</manifest>
