@@ -65,6 +65,10 @@ public class DexTaskbarHook implements IXposedHookLoadPackage {
                                         int navW = leftPanel.getWidth();
                                         int dockW = appdockContainer.getVisibility() != View.GONE ? appdockContainer.getWidth() : 0;
 
+                                        // Khoảng cách tùy chỉnh
+                                        int interPanelGap = 20; // Khoảng cách giữa nút Start và Dock ứng dụng
+                                        int gap = 20;           // Khoảng cách giữa ứng dụng Pinned và Recent
+
                                         if (containerW <= 0 || navW <= 0) {
                                             return;
                                         }
@@ -134,9 +138,6 @@ public class DexTaskbarHook implements IXposedHookLoadPackage {
                                             }
                                         }
 
-                                        // Gap between pinned and recent apps
-                                        int gap = 14; // default gap in px
-
                                         // Position of recent container
                                         float recentTargetLeft = 0;
                                         if (pinnedVisibleRight > 0) {
@@ -163,16 +164,16 @@ public class DexTaskbarHook implements IXposedHookLoadPackage {
                                         }
 
                                         // Calculate cluster start
-                                        float clusterW = navW + visibleDockW;
+                                        float clusterW = navW + interPanelGap + visibleDockW;
                                         float clusterStart = (containerW - clusterW) / 2.0f;
 
                                         // navTranslation centers the leftPanel at clusterStart
                                         float navTranslation = clusterStart - leftPanel.getLeft();
                                         
-                                        // dockTranslation positions appdockContainer so that its visible start is at clusterStart + navW
+                                        // dockTranslation positions appdockContainer so that its visible start is at clusterStart + navW + interPanelGap
                                         float dockTranslation = 0;
                                         if (visibleDockW > 0) {
-                                            dockTranslation = (clusterStart + navW) - appdockContainer.getLeft();
+                                            dockTranslation = (clusterStart + navW + interPanelGap) - appdockContainer.getLeft();
                                         } else {
                                             // If no apps are visible, center the nav panel alone
                                             clusterStart = (containerW - navW) / 2.0f;
@@ -186,9 +187,9 @@ public class DexTaskbarHook implements IXposedHookLoadPackage {
                                         // Apply translation to divider if visible and there are pinned apps
                                         if (divider != null && divider.getVisibility() == View.VISIBLE) {
                                             if (pinnedVisibleRight > 0) {
-                                                float dividerTargetLeft = pinnedVisibleRight + gap;
+                                                float dividerTargetLeft = pinnedVisibleRight + (gap / 2.0f);
                                                 // dividerTargetLeft is relative to appdockContainer's visual start
-                                                float dividerVisualLeft = (clusterStart + navW) + dividerTargetLeft;
+                                                float dividerVisualLeft = (clusterStart + navW + interPanelGap) + dividerTargetLeft;
                                                 float dividerTranslation = dividerVisualLeft - divider.getLeft();
                                                 divider.setTranslationX(dividerTranslation);
                                             } else {

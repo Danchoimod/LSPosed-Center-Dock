@@ -1,14 +1,18 @@
 [
     {
-        "merged": "com.example.dextaskbarcenter.app-merged_res-4:/drawable_tw_tb_ic_finder_mtrl.xml.flat",
-        "source": "com.example.dextaskbarcenter.app-main-6:/drawable/tw_tb_ic_finder_mtrl.xml"
+        "merged": "C:\\Users\\Phu Pham\\.gradle\\daemon\\8.7\\com.example.dextaskbarcenter.app-merged_res-4:\\drawable_tw_tb_ic_recent_mtrl_mirror.xml.flat",
+        "source": "C:\\Users\\Phu Pham\\.gradle\\daemon\\8.7\\com.example.dextaskbarcenter.app-main-6:\\drawable\\tw_tb_ic_recent_mtrl_mirror.xml"
     },
     {
         "merged": "com.example.dextaskbarcenter.app-merged_res-4:/drawable_tw_tb_ic_allapps_mtrl_mirror.xml.flat",
         "source": "com.example.dextaskbarcenter.app-main-6:/drawable/tw_tb_ic_allapps_mtrl_mirror.xml"
     },
     {
-        "merged": "com.example.dextaskbarcenter.app-merged_res-4:/drawable_tw_tb_ic_recent_mtrl_mirror.xml.flat",
-        "source": "com.example.dextaskbarcenter.app-main-6:/drawable/tw_tb_ic_recent_mtrl_mirror.xml"
+        "merged": "C:\\Users\\Phu Pham\\.gradle\\daemon\\8.7\\com.example.dextaskbarcenter.app-merged_res-4:\\drawable_tw_tb_ic_allapps_mtrl_mirror.xml.flat",
+        "source": "C:\\Users\\Phu Pham\\.gradle\\daemon\\8.7\\com.example.dextaskbarcenter.app-main-6:\\drawable\\tw_tb_ic_allapps_mtrl_mirror.xml"
+    },
+    {
+        "merged": "C:\\Users\\Phu Pham\\.gradle\\daemon\\8.7\\com.example.dextaskbarcenter.app-merged_res-4:\\drawable_tw_tb_ic_finder_mtrl.xml.flat",
+        "source": "C:\\Users\\Phu Pham\\.gradle\\daemon\\8.7\\com.example.dextaskbarcenter.app-main-6:\\drawable\\tw_tb_ic_finder_mtrl.xml"
     }
 ]
